@@ -1,6 +1,6 @@
 using { Currency, User, managed, cuid } from '@sap/cds/common';
 namespace sap.capire.orders;
-
+//this cds is moved to Git, for testing purposes, not for production use.Code has been taken from SAP Samples.
 entity Orders : cuid, managed {
   OrderNo  : String @title:'Order Number'; //> readable key
   Items    : Composition of many Orders_Items on Items.up_ = $self;
